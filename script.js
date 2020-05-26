@@ -24,17 +24,17 @@ function writePassword() {
     }
     // Generate Lower & Numbers
     else if (document.getElementById("inputlowercase").checked === true && document.getElementById("inputuppercase").checked === false && document.getElementById("inputnumeric").checked === true && document.getElementById("inputspecialchar").checked === false) {
-      var lowecasenum = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      var lowecasenum = "abcdefghijklmnopqrstuvwxyzZ0123456789";
       password += lowecasenum.charAt(Math.floor(Math.random() * lowecasenum.length));
     }
     // Generate Lower & Upper Cases & Numbers
     else if (document.getElementById("inputlowercase").checked === true && document.getElementById("inputuppercase").checked === true && document.getElementById("inputnumeric").checked === true && document.getElementById("inputspecialchar").checked === false) {
-      var loweruppercasenumber = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ(!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      var loweruppercasenumber = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
       password += loweruppercasenumber.charAt(Math.floor(Math.random() *loweruppercasenumber.length));
     }
     // Generate Lower & Upper Cases & Special Characters
     else if (document.getElementById("inputlowercase").checked === true && document.getElementById("inputuppercase").checked === true && document.getElementById("inputnumeric").checked === false && document.getElementById("inputspecialchar").checked === true) {
-      var loweruppercasespecial = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      var loweruppercasespecial = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ(!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
       password += loweruppercasespecial.charAt(Math.floor(Math.random() *loweruppercasespecial.length));
     }
      // Generate Lower Cases, Numbers & Special Characters
